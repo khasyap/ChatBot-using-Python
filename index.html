@@ -1,0 +1,126 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Roadmap Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Generative AI Roadmap Builder</h1>
+    <p>Enter your skills and describe your goal to generate a personalized roadmap.</p>
+
+    <form id="roadmapForm">
+      <label>Your Skills:</label><br>
+      <input type="text" id="skills" placeholder="e.g. Python, Machine Learning" required><br><br>
+
+      <label>Your Goal / Prompt:</label><br>
+      <input type="text" id="prompt" placeholder="e.g. Become an AI Engineer" required><br><br>
+
+      <button type="submit">Generate</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Student Guide</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Guide</h1>
+        <form id="studentForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="goal">Goal:</label>
+            <input type="text" id="goal" name="goal" required />
+
+            <label for="skills">Skills:</label>
+            <input type="text" id="skills" name="skills" required />
+
+            <label for="time">Time (Hours per Day):</label>
+            <select id="time" name="time" required>
+                <option value="1">1 hr</option>
+                <option value="2">2 hr</option>
+                <option value="3">3 hr</option>
+                <option value="more">More</option>
+            </select>
+
+            <label for="duration">Duration:</label>
+            <select id="duration" name="duration" required>
+                <option value="1">1 month</option>
+                <option value="3">3 months</option>
+                <option value="6">6 months</option>
+            </select>
+
+            <button type="submit">Generate Roadmap</button>
+        </form>
+        <hr>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+ -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Guide</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <div class="container">
+        <h1> Student Guide</h1>
+        <form id="studentForm">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-group">
+                    <label for="goal">Goal</label>
+                    <input type="text" id="goal" name="goal" required />
+                </div>
+                <div class="form-group">
+                    <label for="skills">Skills</label>
+                    <input type="text" id="skills" name="skills" required />
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="time">Time (Hours/Day)</label>
+                    <select id="time" name="time" required>
+                        <option value="1">1 hr</option>
+                        <option value="2">2 hr</option>
+                        <option value="3">3 hr</option>
+                        <option value="more">More</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="duration">Duration</label>
+                    <select id="duration" name="duration" required>
+                        <option value="1">1 month</option>
+                        <option value="3">3 months</option>
+                        <option value="6">6 months</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submitBtn">Generate Roadmap</button>
+                </div>
+            </div>
+        </form>
+        <div id="successMsg"></div>
+        <hr>
+ <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

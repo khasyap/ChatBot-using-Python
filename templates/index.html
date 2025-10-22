@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Guide</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <div class="container">
+        <h1> Student Guide</h1>
+        <p>Meet <b>AIRA</b>, your smart assistant for planning your AI and tech learning journey. Start chatting in the lower right corner!</p>
+        <form id="studentForm">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-group">
+                    <label for="goal">Goal</label>
+                    <input type="text" id="goal" name="goal" required />
+                </div>
+                <div class="form-group">
+                    <label for="skills">Skills</label>
+                    <input type="text" id="skills" name="skills" required />
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="time">Time (Hours/Day)</label>
+                    <select id="time" name="time" required>
+                        <option value="1">1 hr</option>
+                        <option value="2">2 hr</option>
+                        <option value="3">3 hr</option>
+                        <option value="more">More</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="duration">Duration</label>
+                    <select id="duration" name="duration" required>
+                        <option value="1">1 month</option>
+                        <option value="3">3 months</option>
+                        <option value="6">6 months</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submitBtn">Generate Roadmap</button>
+                </div>
+            </div>
+        </form>
+        <div id="successMsg"></div>
+        <hr>
+
+        <!-- Custom Chatbot UI -->
+        <div id="chatbot-container">
+            <div id="chat-window">
+                <div id="chat-messages"></div>
+                <input type="text" id="chat-input" placeholder="Type your message..." />
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+
+ <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
