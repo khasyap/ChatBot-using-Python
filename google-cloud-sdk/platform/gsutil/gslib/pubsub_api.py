@@ -98,7 +98,7 @@ class PubsubApi(object):
       # This API key is not secret and is used to identify gsutil during
       # anonymous requests.
       self.api_client.AddGlobalParam('key',
-                                     'AIzaSyDnacJHrKma0048b13sh8cgxNUwulubmJM')
+                                     '')
 
   def GetTopic(self, topic_name):
     request = apitools_messages.PubsubProjectsTopicsGetRequest(topic=topic_name)
