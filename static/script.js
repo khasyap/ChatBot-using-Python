@@ -51,7 +51,7 @@ document.getElementById('studentForm').addEventListener('submit', function(e) {
 
 // Google Gemini API Key - Replace with your actual API key and set the model name below.
 // NOTE: It's safer to call the Gemini API from a server to avoid exposing your API key in client code.
-const GEMINI_API_KEY = 'AIzaSyAzzYsiW8zdt1fEghEUHYJ1tbSwNLpT3X8'; // <-- Add your API key here (or leave placeholder to use local bot)
+const GEMINI_API_KEY = ''; // <-- Add your API key here (or leave placeholder to use local bot)
 // Set GEMINI_MODEL to a supported model name. You can use either the short name (e.g. "gemini-2.5-flash")
 // or the full resource name returned by ListModels (e.g. "models/gemini-2.5-flash").
 // Example of a valid default from your ListModels output:
